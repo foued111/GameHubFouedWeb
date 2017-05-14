@@ -1,0 +1,65 @@
+project_game_hub_homepage:
+    path:     /
+    defaults: { _controller: projectGameHubBundle:Default:index }
+
+affichagem:
+    path:     /p1
+    defaults: { _controller: projectGameHubBundle:Default:test }
+
+affichagempro:
+    path:     /p2
+    defaults: { _controller: projectGameHubBundle:Default:testpro }
+
+#ajoutSujet:
+#    path:     /ajoutSujet
+#    defaults: { _controller: projectGameHubBundle:Sujet:ajoutSujet }
+
+ajout2Sujet:
+    path:     /ajout2Sujet
+    defaults: { _controller: projectGameHubBundle:Sujet:ajout2 }
+
+deleteSujet:
+    path:     /deleteSujet/{id}
+    defaults: { _controller: projectGameHubBundle:Sujet:deleteSujet }
+
+listSujet:
+    path:     /listSujet/{category}
+    defaults: { _controller: projectGameHubBundle:Sujet:listSujet }
+
+modifierSujet:
+    path:     /modifierSujet/{id}
+    defaults: { _controller: projectGameHubBundle:Sujet:modifierSujet }
+
+addReponse:
+    path:     /addReponse/{id}
+    defaults: { _controller: projectGameHubBundle:Reponse:ajoutReponse }
+
+supprimerReponse:
+    path:     /suprrimerReponse/{id}
+    defaults: { _controller: projectGameHubBundle:Reponse:supprimerReponse }
+
+showReponse:
+    path:     /showReponse/{id}
+    defaults: { _controller: projectGameHubBundle:Reponse:listReponse }
+
+updateReponse:
+    path:     /updateReponse/{id}
+    defaults: { _controller: projectGameHubBundle:Reponse:updateReponse }
+
+singleSujet:
+    path:     /singleSujet/{id}
+    defaults: { _controller: projectGameHubBundle:Sujet:singleSujet }
+
+category:
+    path:     /category
+    defaults: { _controller: projectGameHubBundle:Sujet:category }
+
+jaime:
+    path:     /jaime/{id}
+    defaults: { _controller: projectGameHubBundle:Reponse:jaime }
+
+jaimepas:
+    path:     /jaimepas/{id}
+    defaults: { _controller: projectGameHubBundle:Reponse:jaimepas }
+
+

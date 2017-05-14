@@ -1,0 +1,18 @@
+<h1>Affichage des reponses</h1>
+{% for r in reponses %}
+    <ul>
+
+        <li>
+            Text : {{ r.text }}
+        </li>
+
+
+    </ul>
+
+    <a href="{{ path('updateReponse',{'id': r.idReponse}) }}">Modifier</a>
+    <a href="{{ path('supprimerReponse',{'id': r.idReponse}) }}">Supprimer</a>
+
+    <p>*************************************************</p>
+
+{% endfor %}
+<a href="{{ path('addReponse',{'id': id}) }}">Répondre</a>
